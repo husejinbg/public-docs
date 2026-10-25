@@ -63,7 +63,9 @@ Update the operating system's CA certificate store to remove trust in the affect
 
 ```bash
 sudo apt update
+sudo apt upgrade # (for upgrading other packages like system python and pip)
 sudo apt install --only-upgrade ca-certificates
+sudo update-ca-certificates --fresh
 ```
 
 verify
